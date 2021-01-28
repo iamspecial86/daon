@@ -1,15 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-/* font-family: 'Karla', sans-serif; */
-/* font-family: 'Lora', serif; */
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 
-
-html,body{margin:0;}
-p,figure,h1,h2,h3,h4,h5,h6{margin:0;}
-ul,li{list-style: none; margin:0; padding:0;}
-*{box-sizing: border-box; font-family: 'Karla', sans-serif;}
-img{width:100%; vertical-align:top;}
-a{text-decoration: none; color:#555;}
-
-
-
+/*
+font-family: 'Gothic A1', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Oswald', sans-serif; */
+html,
+body {
+  margin: 0;
+  font-size: 62.5%;
+}
+p,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+img {
+  width: 100%;
+  vertical-align: top;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
