@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2vw 0;
-  height: 10vh;
+  height: 15vh;
   margin: 0 auto;
 }
 .s_head h2 a {
@@ -75,7 +75,7 @@ main {
   width: 80%;
   margin: 0 auto;
   background: #e9f6fd;
-  height: 90vh;
+  height: 85vh;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -83,11 +83,12 @@ main {
 main h1 {
   position: absolute;
   left: 50%;
-  top: 3%;
+  top: 5%;
   transform: translateX(-50%);
   font-size: 3rem;
   font-weight: bold;
 }
+/* left map */
 main h2 {
   font-size: 2rem;
 }
@@ -104,25 +105,120 @@ main > div > h2 {
 main > div iframe {
   border-radius: 3rem;
 }
-
+/* right contact message */
 main > ul {
-  width: 45%;
+  width: 48%;
   margin: 8% 0 3% 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .main_message {
+  width: 45%;
+  height: 66%;
+}
+.message_con {
+  width: 100%;
+  height: 100%;
+}
+.contact {
+  background: #f9f9f9;
+  padding: 8%;
+  width: 100%;
+  height: 100%;
 }
 
+.contact h3 {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contact h4 {
+  margin: 0.5rem 0 1.5rem;
+  display: block;
+  font-size: 1rem;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 1rem;
+  width: 100%;
+  padding: 0;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact input[type="url"],
+.contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 0.5rem;
+  padding: 1rem;
+}
+
+.contact input[type="text"]:hover,
+.contact input[type="email"]:hover,
+.contact input[type="tel"]:hover,
+.contact input[type="url"]:hover,
+.contact textarea:hover {
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+.contact textarea {
+  height: 20%;
+  width: 100%;
+  resize: none;
+}
+
+.contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0cf;
+  color: #fff;
+  margin: 0 0 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.contact button[type="submit"]:hover {
+  background: #09c;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+
+/* right contact info */
+.main_contact {
+  width: 45%;
+  margin-right: 5%;
+  background: #f9f9f9;
+  height: 66%;
+}
+.main_contact > h2 {
+  margin: 8% 0 8% 8%;
+}
 .main_contact > ul > li {
   display: flex;
   align-items: center;
   font-size: 1.4rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
-.con_info {
-}
-.con_info li {
-}
+
 .con_info li a {
   width: 4rem;
   height: 4rem;
@@ -136,7 +232,7 @@ main > ul {
   position: relative;
   overflow: hidden;
   z-index: 1;
-  border: 0.3rem solid #fff;
+  border: 0.3rem solid #e9f6fd;
 }
 .con_info li a .fas {
   position: relative;
@@ -176,4 +272,82 @@ main > ul {
 
 .con_info li:nth-child(3) a:before {
   background: #00aff0;
+}
+
+.con_sns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+
+  margin: 20% auto 0 auto;
+}
+.con_sns li a {
+  width: 6rem;
+  height: 6rem;
+  background-color: #fff;
+  text-align: center;
+  line-height: 5.5rem;
+  font-size: 3rem;
+  margin: 0 1rem;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 0.3rem solid #e9f6fd;
+}
+.con_sns li a .fab {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+
+.con_sns li a:hover .fab {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.con_sns li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.con_sns li a:hover:before {
+  top: 0;
+}
+
+.con_sns li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.con_sns li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.con_sns li:nth-child(3) a:before {
+  background: #e4405f;
+}
+.con_sns li:nth-child(4) a:before {
+  background: #00c300;
+}
+
+.main_howto {
+  background: #f9f9f9;
+  width: 95%;
+  padding: 2% 0 0 3%;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+.main_howto h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }

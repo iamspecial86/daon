@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2vw 0;
-  height: 10vh;
+  height: 15vh;
   margin: 0 auto;
 }
 .s_head h2 a {
@@ -80,7 +80,7 @@
 
 .slider {
   width: 100%;
-  height: 90vh;
+  height: 85vh;
   position: relative;
   overflow: hidden;
 }
@@ -168,8 +168,8 @@
 .main_txt {
   background: #fff;
   position: absolute;
-  right: 10%;
-  top: 30%;
+  left: 10%;
+  top: 20%;
   width: 25%;
   padding: 2vw 2vw;
   border-radius: 1rem;
@@ -432,12 +432,77 @@ footer > span {
 .foot_top nav a {
   font-size: 1.4rem;
 }
-.foot_top div a {
-  padding: 1rem;
+
+.con_sns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.foot_top div a img {
-  width: 4rem;
+.con_sns li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.con_sns li a {
+  width: 5rem;
+  height: 5rem;
+  background-color: #faf4ed;
+  text-align: center;
+
+  font-size: 3rem;
+  margin: 0 1rem;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 0.2rem solid #494949;
+}
+.con_sns li a .fab {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+.con_sns li a:hover {
+  border: 0.3rem solid #fff;
+}
+.con_sns li a:hover .fab {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.con_sns li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.con_sns li a:hover:before {
+  top: 0;
+}
+
+.con_sns li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.con_sns li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.con_sns li:nth-child(3) a:before {
+  background: #e4405f;
+}
+.con_sns li:nth-child(4) a:before {
+  background: #00c300;
+}
+
 .foot_bottom {
   width: 80%;
   margin: 0 auto;
