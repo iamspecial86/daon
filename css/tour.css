@@ -196,6 +196,108 @@ main > div > ul {
   transform: rotate(-50deg);
 }
 
+/* 남이섬 */
+.marker-top-middle {
+  bottom: 43%;
+  right: 45%;
+  position: absolute;
+}
+.label-tm {
+  background: rgba(0, 166, 205, 1);
+  width: 12rem;
+  position: absolute;
+  top: 2.6rem;
+  left: 4rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: #fff;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+}
+.arrow-top-middle {
+  position: absolute;
+  top: 1.6rem;
+  left: 0.3rem;
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-top: 1.6rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
+  border-left: 4.4rem solid rgba(0, 166, 205, 1);
+  transform: rotate(-155deg);
+}
+
+/* 자라섬 */
+.marker-top-left {
+  bottom: 47%;
+  right: 45%;
+  position: absolute;
+}
+.label-tl {
+  background: rgba(0, 166, 205, 1);
+  width: 12rem;
+  position: absolute;
+  top: -3.6rem;
+  left: -15rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: #fff;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+}
+
+.arrow-top-left {
+  position: absolute;
+  top: -2.3rem;
+  left: -4.8rem;
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-top: 1.6rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+  border-left: 6rem solid rgba(0, 166, 205, 1);
+
+  transform: rotate(30deg);
+}
+
+/* 제이든가든 */
+.marker-top-right {
+  top: 50%;
+  right: 44%;
+  position: absolute;
+}
+.label-tr {
+  background: rgba(0, 166, 205, 1);
+  width: 12rem;
+  position: absolute;
+  top: -3.6rem;
+  left: 2rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: #fff;
+  font-family: "Gothic A1", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 0.4rem;
+}
+.arrow-top-right {
+  position: absolute;
+  top: -1.5rem;
+  right: -4.5rem;
+  z-index: 10;
+  width: 0;
+  height: 0;
+  border-top: 1.6rem solid transparent;
+  border-bottom: 0.2rem solid transparent;
+  border-left: 4.4rem solid rgba(0, 166, 205, 1);
+
+  transform: rotate(130deg);
+}
+
 /* 마크업 동그라미와 효과 */
 .pulse {
   width: 1rem;
