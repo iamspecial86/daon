@@ -3,6 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:url" content="https://iamspecial86.github.io/daon/" />
+
+    <meta property="og:title" content="다온펜션" />
+
+    <meta property="og:description" content="감성 돋는 가평 펜션" />
+
+    <meta property="og:image" content="/img/img_thum01.jpg" />
+    <link
+      href="imgs/favicon_daon.ico"
+      type="image/x-icon"
+      rel="shortcut icon"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -11,7 +23,7 @@
     />
     <link href="css/contect.css" rel="stylesheet" />
 
-    <title>Document</title>
+    <title>Daon Pension</title>
   </head>
   <body>
     <header class="s_head">
@@ -21,12 +33,14 @@
           <li class="nav_menu-item">
             <a href="contact.html" class="m_txt">Contact Us</a>
           </li>
-          <li class="nav_menu-item"><a href="#" class="m_txt">Rooms</a></li>
           <li class="nav_menu-item">
-            <a href="#" class="m_txt">Tour Guide</a>
+            <a href="room.html" class="m_txt">Rooms</a>
           </li>
           <li class="nav_menu-item">
-            <a href="#" class="m_txt">Reservation</a>
+            <a href="tour.html" class="m_txt">Tour Guide</a>
+          </li>
+          <li class="nav_menu-item">
+            <a href="reservation.html" class="m_txt">Reservation</a>
             <ul class="nav_submenu">
               <li class="nav_submenu-item">
                 <a href="#" class="m_txt2">예약하기</a>
@@ -40,117 +54,169 @@
       </nav>
     </header>
     <main>
-      <h1>Contact Us</h1>
-      <div>
-        <h2>Map</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1634556.6541545275!2d126.8073726447457!3d36.854605568462254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356327df29408c6f%3A0x69bea081e58fd82!2z64uk7JioIO2OnOyFmA!5e0!3m2!1sko!2skr!4v1611802256873!5m2!1sko!2skr"
-          name="google map"
-          width="100%"
-          height="100%"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
-      </div>
-      <ul>
-        <li class="main_message">
-          <div class="message_con">
-            <form class="contact">
-              <h3>Send-Message</h3>
-              <h4>문의사항은 이곳에 적어주세요</h4>
-              <fieldset>
-                <input
-                  placeholder="Your name"
-                  type="text"
-                  tabindex="1"
-                  required
-                  autofocus
-                />
-              </fieldset>
-              <fieldset>
-                <input
-                  placeholder="Your Email Address"
-                  type="email"
-                  tabindex="2"
-                  required
-                />
-              </fieldset>
-              <fieldset>
-                <input
-                  placeholder="Your Phone Number"
-                  type="tel"
-                  tabindex="3"
-                  required
-                />
-              </fieldset>
+      <section>
+        <h1>Contact Us</h1>
+        <div>
+          <h2>Map</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1634556.6541545275!2d126.8073726447457!3d36.854605568462254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x356327df29408c6f%3A0x69bea081e58fd82!2z64uk7JioIO2OnOyFmA!5e0!3m2!1sko!2skr!4v1611802256873!5m2!1sko!2skr"
+            name="google map"
+            width="100%"
+            height="100%"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+        <ul>
+          <li class="main_message">
+            <div class="message_con">
+              <form class="contact">
+                <h3>Send-Message</h3>
+                <h4>문의사항은 이곳에 적어주세요</h4>
+                <fieldset>
+                  <input
+                    placeholder="Your name"
+                    type="text"
+                    tabindex="1"
+                    required
+                    autofocus
+                  />
+                </fieldset>
+                <fieldset>
+                  <input
+                    placeholder="Your Email Address"
+                    type="email"
+                    tabindex="2"
+                    required
+                  />
+                </fieldset>
+                <fieldset>
+                  <input
+                    placeholder="Your Phone Number"
+                    type="tel"
+                    tabindex="3"
+                    required
+                  />
+                </fieldset>
 
-              <fieldset>
-                <textarea
-                  placeholder="Type your Message Here...."
-                  tabindex="4"
-                  required
-                ></textarea>
-              </fieldset>
-              <fieldset>
-                <button
-                  name="submit"
-                  type="submit"
-                  id="contact-submit"
-                  data-submit="...Sending"
-                >
-                  보내기
-                </button>
-              </fieldset>
-            </form>
-          </div>
-        </li>
-        <li class="main_contact">
-          <h2>Contact Us</h2>
-          <ul class="con_info">
-            <li>
-              <a href="#"> <i class="fas fa-map-marker-alt"></i></a>경기도
-              가평군 가평읍 경반안로 357-187
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-phone"></i></a>+010-1234-1234
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-comments"></i></a
-              >support@daonpenshion.co.kr
-            </li>
-          </ul>
-          <ul class="con_sns">
-            <li>
-              <a href="#"> <i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"> <i class="fab fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"> <i class="fab fa-instagram"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fab fa-line"></i></a>
-            </li>
-          </ul>
-        </li>
-        <li class="main_howto">
-          <h3>How to get there</h3>
-          <strong>시외버스 이용시 : </strong>동서울, 상봉동 시외버스터미널 →
-          춘천행 버스 승차 → 가평 시외버스터미널에서 하차<br /><strong
-            >기차 이용시: </strong
-          >청량리역에서 경춘선 승차 → 청평 지나 가평역에서 하차<br /><strong
-            >자차이용시: </strong
-          >가평역입구에서 '명지산, 연인산, 가평군청' 방면으로 좌회전 -><br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          대곡교차로에서 '북면, 종합운동장' 방면으로 좌회전 -><br />
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          '경반리, 칼봉산' 방면으로 좌회전 -> 도착
-        </li>
-      </ul>
+                <fieldset>
+                  <textarea
+                    placeholder="Type your Message Here...."
+                    tabindex="4"
+                    required
+                  ></textarea>
+                </fieldset>
+                <fieldset>
+                  <button
+                    name="submit"
+                    type="submit"
+                    id="contact-submit"
+                    data-submit="...Sending"
+                  >
+                    보내기
+                  </button>
+                </fieldset>
+              </form>
+            </div>
+          </li>
+          <li class="main_contact">
+            <h2>Contact Us</h2>
+            <ul class="con_info">
+              <li>
+                <a href="#"> <i class="fas fa-map-marker-alt"></i></a>경기도
+                가평군 가평읍 경반안로 357-187
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-phone"></i></a>+010-1234-1234
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-comments"></i></a
+                >support@daonpenshion.co.kr
+              </li>
+            </ul>
+            <ul class="con_sns">
+              <li>
+                <a href="#"> <i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"> <i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"> <i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-line"></i></a>
+              </li>
+            </ul>
+          </li>
+          <li class="main_howto">
+            <h3>How to get there</h3>
+            <strong>시외버스 이용시 : </strong>동서울, 상봉동 시외버스터미널 →
+            춘천행 버스 승차 → 가평 시외버스터미널에서 하차<br /><strong
+              >기차 이용시: </strong
+            >청량리역에서 경춘선 승차 → 청평 지나 가평역에서 하차<br /><strong
+              >자차이용시: </strong
+            >가평역입구에서 '명지산, 연인산, 가평군청' 방면으로 좌회전 -><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            대곡교차로에서 '북면, 종합운동장' 방면으로 좌회전 -><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            '경반리, 칼봉산' 방면으로 좌회전 -> 도착
+          </li>
+        </ul>
+      </section>
     </main>
+
+    <footer>
+      <div class="foot_top">
+        <nav>
+          <a href="#">Contact Us</a>
+          <a href="#">Rooms</a>
+          <a href="#">Tour Guide</a>
+          <a href="#">Reservation</a>
+        </nav>
+        <ul class="con_sns2">
+          <li>
+            <a href="#"> <i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-line"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="foot_bottom">
+        <div>
+          <a href>Daon</a>
+          <div>
+            <p>
+              Copyright © 2021 http://www.daonpension.kr All Rights Reserved.<br />
+              The use of this website requires acceptance of the Terms and
+              Conditions and Privacy Policy.
+            </p>
+            <span>경기도 가평군 가평읍 경반안로 357-187</span>
+          </div>
+        </div>
+
+        <div>
+          <p>
+            <strong>Need help?</strong><br />
+            Call our support
+          </p>
+          <ul>
+            <li class="supot_call">031-581-0662</li>
+            <li class="supot_mail">support@daon.kr</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

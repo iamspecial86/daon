@@ -410,18 +410,15 @@
 footer {
   background: #faf4ed;
 }
-footer > span {
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  border-bottom: 1px solid black;
-}
+
 .foot_top {
   width: 80%;
   margin: 0 auto;
-  padding: 5% 0 2% 0;
+  padding: 4% 0 2% 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
 }
 .foot_top nav {
   width: 30%;

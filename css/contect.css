@@ -1,5 +1,5 @@
 @charset 'utf-8';
-@import url("all.css");
+
 @import url("common.css");
 
 /* header */
@@ -72,15 +72,18 @@
 
 /* main */
 main {
+  height: 100vh;
+}
+section {
   width: 80%;
   margin: 0 auto;
   background: #e9f6fd;
-  height: 85vh;
+  height: 95vh;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
-main h1 {
+section h1 {
   position: absolute;
   left: 50%;
   top: 5%;
@@ -89,26 +92,26 @@ main h1 {
   font-weight: bold;
 }
 /* left map */
-main h2 {
+section h2 {
   font-size: 2rem;
 }
-main > div {
+section > div {
   width: 45%;
-  margin: 8% 0 3% 3%;
+  margin: 10% 0 3% 3%;
   position: relative;
 }
-main > div > h2 {
+section > div > h2 {
   position: absolute;
   right: 10%;
   top: 5%;
 }
-main > div iframe {
+section > div iframe {
   border-radius: 3rem;
 }
 /* right contact message */
-main > ul {
+section > ul {
   width: 48%;
-  margin: 8% 0 3% 3%;
+  margin: 10% 0 3% 3%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -350,4 +353,154 @@ fieldset {
 .main_howto h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+/* footer */
+
+footer {
+  background: #faf4ed;
+}
+
+.foot_top {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4% 0 2% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.foot_top nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.foot_top nav a {
+  font-size: 1.4rem;
+}
+
+.con_sns2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.con_sns2 li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con_sns2 li a {
+  width: 5rem;
+  height: 5rem;
+  background-color: #faf4ed;
+  text-align: center;
+
+  font-size: 3rem;
+  margin: 0 1rem;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 0.2rem solid #494949;
+}
+.con_sns2 li a .fab {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+.con_sns2 li a:hover {
+  border: 0.3rem solid #fff;
+}
+.con_sns2 li a:hover .fab {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.con_sns2 li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.con_sns2 li a:hover:before {
+  top: 0;
+}
+
+.con_sns2 li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.con_sns2 li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.con_sns2 li:nth-child(3) a:before {
+  background: #e4405f;
+}
+.con_sns2 li:nth-child(4) a:before {
+  background: #00c300;
+}
+
+.foot_bottom {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.foot_bottom div:nth-of-type(1) {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.foot_bottom div:nth-of-type(1) a {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.foot_bottom div:nth-of-type(1) div {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.foot_bottom div:nth-of-type(1) div p {
+  font-size: 1rem;
+}
+.foot_bottom div:nth-of-type(1) div span {
+  display: block;
+  font-size: 1rem;
+}
+
+.foot_bottom div:nth-of-type(2) {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.foot_bottom div:nth-of-type(2) p {
+  font-size: 2rem;
+}
+.foot_bottom div:nth-of-type(2) ul {
+  display: block;
+  padding: 0.5vw 0 0 2vw;
+}
+
+.supot_call {
+  background: url("../imgs/phone.png") no-repeat;
+  padding: 0.3vw 0 1vw 3vw;
+  font-size: 1.2rem;
+}
+.supot_mail {
+  background: url("../imgs/mail.png") no-repeat;
+  padding: 0.3vw 0 1vw 3vw;
+  font-size: 1.2rem;
 }
