@@ -96,7 +96,7 @@ main > div > ul {
 
 /* 쁘띠프랑스 지도 마크업 */
 .marker-bottom-middle {
-  bottom: 25%;
+  bottom: 29%;
   left: 49.5%;
   position: absolute;
 }
@@ -131,7 +131,7 @@ main > div > ul {
 
 /* 청평호수 지도 마크업 */
 .marker-bottom-right {
-  bottom: 24%;
+  bottom: 28%;
   right: 48%;
   position: absolute;
 }
@@ -164,7 +164,7 @@ main > div > ul {
 /* 아침고요수목원 */
 .marker-bottom-left {
   bottom: 24%;
-  left: 43.5%;
+  left: 45%;
   position: absolute;
 }
 .label-btl {
@@ -347,6 +347,101 @@ main > div > ul {
   }
 }
 
+/* map 에 투어 정보 */
+.map_info {
+}
+.map_info > li {
+  width: 20%;
+  height: 10vw;
+  border-radius: 2rem;
+}
+
+.map_info > li > a {
+}
+.map_info > li > a > i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 4rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.map_info > li > ul {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  border-radius: 0 0 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.map_info > li > ul > li {
+  margin: 0 1rem;
+}
+.map_info > li > ul > li > h3 {
+  font-size: 1.5rem;
+  font-family: "Jua", sans-serif;
+  font-weight: 500;
+}
+.map_info > li > ul > li > p {
+  font-size: 0.8rem;
+  font-family: "Jua", sans-serif;
+}
+.map_info > li > ul > li:nth-of-type(2) {
+  font-size: 1.5rem;
+  font-family: "Jua", sans-serif;
+}
+
+.map-top-left {
+  background: url("../imgs/maptopleft.jpg") no-repeat center;
+  background-size: contain;
+  top: 10%;
+  left: 15%;
+  position: absolute;
+}
+.map-middle-left {
+  background: url("../imgs/mapmiddleleft.jpg") no-repeat center;
+  background-size: contain;
+  top: 38%;
+  left: 5%;
+  position: absolute;
+}
+.map-bottom-left {
+  background: url("../imgs/mapbottomleft.jpg") no-repeat center;
+  background-size: contain;
+  bottom: 7%;
+  left: 10%;
+  position: absolute;
+}
+.map-top-right {
+  background: url("../imgs/maptopright.jpg") no-repeat center;
+  background-size: contain;
+  top: 10%;
+  right: 15%;
+  position: absolute;
+}
+.map-middle-right {
+  background: url("../imgs/mapmiddleright.jpg") no-repeat center;
+  background-size: contain;
+  top: 38%;
+  right: 5%;
+  position: absolute;
+}
+.map-bottom-right {
+  background: url("../imgs/mapbottomright.jpg") no-repeat center;
+  background-size: contain;
+  bottom: 7%;
+  right: 10%;
+  position: absolute;
+}
 /* footer */
 
 footer {
