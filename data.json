@@ -1,0 +1,28 @@
+{"gallery":[
+    {"roomtype":"A",
+     "roomnumber":"101",
+     "imgSrc":"imgs/room1.jpg"},
+     {"roomtype":"A",
+      "roomnumber":"102",
+      "imgSrc":"imgs/room2.jpg"},
+      {"roomtype":"A",
+        "roomnumber":"201",
+        "imgSrc":"imgs/room3.jpg"},
+      {"roomtype":"A",
+      "roomnumber":"202",
+      "imgSrc":"imgs/room4.jpg"},
+      {"roomtype":"B",
+      "roomnumber":"101",
+      "imgSrc":"imgs/room5.jpg"},
+      {"roomtype":"B",
+        "roomnumber":"102",
+        "imgSrc":"imgs/room6.jpg"},
+    {"roomtype":"B",
+      "roomnumber":"201",
+     "imgSrc":"imgs/room7.jpg"},
+     {"roomtype":"B",
+        "roomnumber":"202",
+        "imgSrc":"imgs/room8.jpg"}
+
+]
+}

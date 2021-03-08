@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-@import url("common.css");
+@import url('common.css');
 
 /* header */
 .s_head {
@@ -13,7 +13,7 @@
   margin: 0 auto;
 }
 .s_head h2 a {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 4rem;
   color: #494949;
 }
@@ -58,7 +58,7 @@
   background: rgba(0, 0, 0, 0.1);
 }
 .m_txt2 {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   color: #494949;
   text-align: center;
   font-size: 1.4rem;
@@ -66,28 +66,29 @@
 
 .m_txt {
   color: #494949;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
 }
 
 /* main */
-main > div {
+.map {
   width: 80%;
   margin: 0 auto;
   background: #e9f6fd;
-  height: 85vh;
+  height: 90vh;
   position: relative;
 }
-main > div > h2 {
+.map > h2 {
   font-size: 3rem;
   text-align: center;
   padding: 3% 0 0 1%;
   font-weight: bold;
 }
-main > div > ul {
+.map > div > ul:nth-of-type(1) {
+  position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 .tour_map {
   width: 25%;
@@ -109,7 +110,7 @@ main > div > ul {
   text-align: center;
   padding: 0.5rem;
   color: #fff;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 0.4rem;
@@ -144,7 +145,7 @@ main > div > ul {
   text-align: center;
   padding: 0.5rem;
   color: #fff;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 0.4rem;
@@ -176,7 +177,7 @@ main > div > ul {
   text-align: center;
   padding: 0.5rem;
   color: #fff;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 0.4rem;
@@ -211,7 +212,7 @@ main > div > ul {
   text-align: center;
   padding: 0.5rem;
   color: #fff;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 0.4rem;
@@ -244,7 +245,7 @@ main > div > ul {
   text-align: center;
   padding: 0.5rem;
   color: #fff;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 0.4rem;
@@ -279,7 +280,7 @@ main > div > ul {
   text-align: center;
   padding: 0.5rem;
   color: #fff;
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Gothic A1', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
   border-radius: 0.4rem;
@@ -348,7 +349,16 @@ main > div > ul {
 }
 
 /* map 에 투어 정보 */
+.map > div {
+  position: relative;
+  width: 100%;
+}
 .map_info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 .map_info > li {
   width: 20%;
@@ -388,59 +398,192 @@ main > div > ul {
 }
 .map_info > li > ul > li > h3 {
   font-size: 1.5rem;
-  font-family: "Jua", sans-serif;
+  font-family: 'Jua', sans-serif;
   font-weight: 500;
 }
 .map_info > li > ul > li > p {
   font-size: 0.8rem;
-  font-family: "Jua", sans-serif;
+  font-family: 'Jua', sans-serif;
 }
 .map_info > li > ul > li:nth-of-type(2) {
   font-size: 1.5rem;
-  font-family: "Jua", sans-serif;
+  font-family: 'Jua', sans-serif;
 }
 
 .map-top-left {
-  background: url("../imgs/maptopleft.jpg") no-repeat center;
+  background: url('../imgs/maptopleft.jpg') no-repeat center;
   background-size: contain;
-  top: 10%;
-  left: 15%;
+  top: 5%;
+  left: 10%;
   position: absolute;
 }
 .map-middle-left {
-  background: url("../imgs/mapmiddleleft.jpg") no-repeat center;
+  background: url('../imgs/mapmiddleleft.jpg') no-repeat center;
   background-size: contain;
   top: 38%;
   left: 5%;
   position: absolute;
 }
 .map-bottom-left {
-  background: url("../imgs/mapbottomleft.jpg") no-repeat center;
+  background: url('../imgs/mapbottomleft.jpg') no-repeat center;
   background-size: contain;
-  bottom: 7%;
+  bottom: 0%;
   left: 10%;
   position: absolute;
 }
 .map-top-right {
-  background: url("../imgs/maptopright.jpg") no-repeat center;
+  background: url('../imgs/maptopright.jpg') no-repeat center;
   background-size: contain;
-  top: 10%;
-  right: 15%;
+  top: 5%;
+  right: 10%;
   position: absolute;
 }
 .map-middle-right {
-  background: url("../imgs/mapmiddleright.jpg") no-repeat center;
+  background: url('../imgs/mapmiddleright.jpg') no-repeat center;
   background-size: contain;
   top: 38%;
   right: 5%;
   position: absolute;
 }
 .map-bottom-right {
-  background: url("../imgs/mapbottomright.jpg") no-repeat center;
+  background: url('../imgs/mapbottomright.jpg') no-repeat center;
   background-size: contain;
-  bottom: 7%;
+  bottom: 0%;
   right: 10%;
   position: absolute;
+}
+
+/* information_map */
+.information {
+  width: 80%;
+
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.information > div {
+  width: 40%;
+  position: relative;
+  background: #e9f6fd;
+}
+.information_map1 > div:nth-of-type(1) {
+  width: 100%;
+}
+.information_map1 > div > input[type='radio'] {
+  display: none;
+}
+.information_map1 > div > ul:nth-of-type(1) {
+  position: relative;
+  width: 100%;
+  height: 42vh;
+}
+.information_map1 > div > ul:nth-of-type(1) li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition-delay: 1s;
+}
+.information_map1 > div > ul:nth-of-type(1) li img {
+  background-position: center;
+  width: 100%;
+}
+
+.bullets1 {
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+.bullets1 label {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+  margin: 0 0.1vw;
+}
+
+.map_slider1
+  input[type='radio']:nth-child(1):checked
+  ~ .bullets1
+  label:nth-child(1) {
+  background-color: #ffbc5e;
+}
+.map_slider1
+  input[type='radio']:nth-child(2):checked
+  ~ .bullets1
+  label:nth-child(2) {
+  background-color: #ffbc5e;
+}
+.map_slider1
+  input[type='radio']:nth-child(3):checked
+  ~ .bullets1
+  label:nth-child(3) {
+  background-color: #ffbc5e;
+}
+.map_slider1
+  input[type='radio']:nth-child(4):checked
+  ~ .bullets1
+  label:nth-child(4) {
+  background-color: #ffbc5e;
+}
+
+.map_slider1 input[type='radio']:nth-child(1):checked ~ .imgs1 li:nth-child(1) {
+  left: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+.map_slider1 input[type='radio']:nth-child(2):checked ~ .imgs1 li:nth-child(2) {
+  left: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+.map_slider1 input[type='radio']:nth-child(3):checked ~ .imgs1 li:nth-child(3) {
+  left: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+.map_slider1 input[type='radio']:nth-child(4):checked ~ .imgs1 li:nth-child(4) {
+  left: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.ttl_info {
+  width: 100%;
+  position: absolute;
+  bottom: 26%;
+  left: 0%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.65) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+.ttl_info > li,
+.ttl_info > li > h3 {
+  font-family: 'Jua', sans-serif;
+  font-weight: 300;
+}
+.ttl_info > li:nth-of-type(1) > p {
+  font-size: 1.4rem;
+  font-family: 'Jua', sans-serif;
+}
+.ttlinfo {
+  width: 100%;
+  font-size: 1.4rem;
+  padding: 2rem 0 2rem 4rem;
+  color: #292929;
+  font-family: 'Gothic A1', sans-serif;
 }
 /* footer */
 
@@ -507,7 +650,7 @@ footer {
 }
 
 .con_sns2 li a:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 100%;
   left: 0;
@@ -582,12 +725,12 @@ footer {
 }
 
 .supot_call {
-  background: url("../imgs/phone.png") no-repeat;
+  background: url('../imgs/phone.png') no-repeat;
   padding: 0.3vw 0 1vw 3vw;
   font-size: 1.2rem;
 }
 .supot_mail {
-  background: url("../imgs/mail.png") no-repeat;
+  background: url('../imgs/mail.png') no-repeat;
   padding: 0.3vw 0 1vw 3vw;
   font-size: 1.2rem;
 }
