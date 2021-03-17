@@ -3,19 +3,23 @@ $(function () {
   $('header').load('inc.html header h2, header nav');
   $('footer').load('inc.html footer .foot_top, footer .foot_bottom');
 
-  function init() {
-    /* var url = location.hash;
-      var pageNum = 0;
-      switch (url) {
-        case '#0':
-          pageNum = 0;
-          break;
-        case '#1':
-          pageNum = 1;
-          break;
-        case '#2':
-          pageNum = 2;
-          break;
-      } */
-  }
+  $('.nav_menu-item')
+    .eq(3)
+    .hover(
+      function () {
+        $(this).find('.nav_submenu').stop().slideDown();
+      },
+      function () {
+        $(this).find('.nav_submenu').stop().slideUp();
+      }
+    );
+
+  $('.regular').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  });
 });
