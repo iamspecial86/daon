@@ -70,6 +70,7 @@
   font-size: 1.6rem;
 }
 
+
 /* footer */
 
 footer {
@@ -95,17 +96,17 @@ footer {
   font-size: 1.4rem;
 }
 
-.con_sns2 {
+.con_sns {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.con_sns2 li {
+.con_sns li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.con_sns2 li a {
+.con_sns li a {
   width: 5rem;
   height: 5rem;
   background-color: #faf4ed;
@@ -120,21 +121,21 @@ footer {
   z-index: 1;
   border: 0.2rem solid #494949;
 }
-.con_sns2 li a .fab {
+.con_sns li a .fab {
   position: relative;
   color: #262626;
   transition: 0.5s;
   z-index: 3;
 }
-.con_sns2 li a:hover {
+.con_sns li a:hover {
   border: 0.3rem solid #fff;
 }
-.con_sns2 li a:hover .fab {
+.con_sns li a:hover .fab {
   color: #fff;
   transform: rotateY(360deg);
 }
 
-.con_sns2 li a:before {
+.con_sns li a:before {
   content: "";
   position: absolute;
   top: 100%;
@@ -146,22 +147,22 @@ footer {
   z-index: 2;
 }
 
-.con_sns2 li a:hover:before {
+.con_sns li a:hover:before {
   top: 0;
 }
 
-.con_sns2 li:nth-child(1) a:before {
+.con_sns li:nth-child(1) a:before {
   background: #3b5999;
 }
 
-.con_sns2 li:nth-child(2) a:before {
+.con_sns li:nth-child(2) a:before {
   background: #55acee;
 }
 
-.con_sns2 li:nth-child(3) a:before {
+.con_sns li:nth-child(3) a:before {
   background: #e4405f;
 }
-.con_sns2 li:nth-child(4) a:before {
+.con_sns li:nth-child(4) a:before {
   background: #00c300;
 }
 
