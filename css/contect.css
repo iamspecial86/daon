@@ -277,7 +277,7 @@ fieldset {
   background: #00aff0;
 }
 
-.con_sns {
+.con_sns2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -285,7 +285,7 @@ fieldset {
 
   margin: 20% auto 0 auto;
 }
-.con_sns li a {
+.con_sns2 li a {
   width: 6rem;
   height: 6rem;
   background-color: #fff;
@@ -300,120 +300,13 @@ fieldset {
   z-index: 1;
   border: 0.3rem solid #e9f6fd;
 }
-.con_sns li a .fab {
-  position: relative;
-  color: #262626;
-  transition: 0.5s;
-  z-index: 3;
-}
-
-.con_sns li a:hover .fab {
-  color: #fff;
-  transform: rotateY(360deg);
-}
-
-.con_sns li a:before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #f00;
-  transition: 0.5s;
-  z-index: 2;
-}
-
-.con_sns li a:hover:before {
-  top: 0;
-}
-
-.con_sns li:nth-child(1) a:before {
-  background: #3b5999;
-}
-
-.con_sns li:nth-child(2) a:before {
-  background: #55acee;
-}
-
-.con_sns li:nth-child(3) a:before {
-  background: #e4405f;
-}
-.con_sns li:nth-child(4) a:before {
-  background: #00c300;
-}
-
-.main_howto {
-  background: #f9f9f9;
-  width: 95%;
-  padding: 2% 0 0 3%;
-  font-size: 1.3rem;
-  line-height: 2;
-}
-.main_howto h3 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* footer */
-
-footer {
-  background: #faf4ed;
-}
-
-.foot_top {
-  width: 80%;
-  margin: 0 auto;
-  padding: 4% 0 2% 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid black;
-}
-.foot_top nav {
-  width: 30%;
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
-}
-.foot_top nav a {
-  font-size: 1.4rem;
-}
-
-.con_sns2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.con_sns2 li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.con_sns2 li a {
-  width: 5rem;
-  height: 5rem;
-  background-color: #faf4ed;
-  text-align: center;
-
-  font-size: 3rem;
-  margin: 0 1rem;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  border: 0.2rem solid #494949;
-}
 .con_sns2 li a .fab {
   position: relative;
   color: #262626;
   transition: 0.5s;
   z-index: 3;
 }
-.con_sns2 li a:hover {
-  border: 0.3rem solid #fff;
-}
+
 .con_sns2 li a:hover .fab {
   color: #fff;
   transform: rotateY(360deg);
@@ -447,6 +340,114 @@ footer {
   background: #e4405f;
 }
 .con_sns2 li:nth-child(4) a:before {
+  background: #00c300;
+}
+
+.main_howto {
+  background: #f9f9f9;
+  width: 95%;
+  padding: 2% 0 0 3%;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+.main_howto h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+/* footer */
+
+footer {
+  background: #faf4ed;
+}
+
+.foot_top {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4% 0 2% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.foot_top nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.foot_top nav a {
+  font-size: 1.4rem;
+}
+
+.con_sns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.con_sns li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.con_sns li a {
+  width: 5rem;
+  height: 5rem;
+  background-color: #faf4ed;
+  text-align: center;
+
+  font-size: 3rem;
+  margin: 0 1rem;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 0.2rem solid #494949;
+}
+.con_sns li a .fab {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+.con_sns li a:hover {
+  border: 0.3rem solid #fff;
+}
+.con_sns li a:hover .fab {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.con_sns li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.con_sns li a:hover:before {
+  top: 0;
+}
+
+.con_sns li:nth-child(1) a:before {
+  background: #3b5999;
+}
+
+.con_sns li:nth-child(2) a:before {
+  background: #55acee;
+}
+
+.con_sns li:nth-child(3) a:before {
+  background: #e4405f;
+}
+.con_sns li:nth-child(4) a:before {
   background: #00c300;
 }
 
