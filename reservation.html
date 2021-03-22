@@ -21,14 +21,199 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <link href="css/reservation.css" rel="stylesheet" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="common.js"></script>
+    <script src="reservation.js"></script>
+
     <title>Daon Pension</title>
   </head>
   <body>
     <header class="s_head"></header>
+    <main>
+      <section>
+        <div class="roomimage_wrapper">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="imgs/room1.jpg" alt="" />
+                <a href=""><i class="fas fa-search-plus"></i></a>
+                <span>A동&nbsp/&nbsp101호</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/room2.jpg" alt="" />
+                <span>A동&nbsp/&nbsp102호</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/room3.jpg" alt="" />
+                <span>A동&nbsp/&nbsp201호</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/room4.jpg" alt="" />
+                <span>A동&nbsp/&nbsp202호</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/room5.jpg" alt="" />
+                <span>B동&nbsp/&nbsp101호</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/room6.jpg" alt="" />
+                <span>B동&nbsp/&nbsp102호</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/room7.jpg" alt="" />
+                <span>B동&nbsp/&nbsp201호</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="imgs/room8.jpg" alt="" />
+                <span>B동&nbsp/&nbsp202호</span>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="reserv_wrapper">
+          <form class="quick-reservation">
+            <div class="container">
+              <div class="quick-reservation__header">
+                <h2 class="title">Reservation</h2>
+                <div class="close-icon">
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
 
+              <div class="quick-reservation__form">
+                <section class="form__content">
+                  <div class="row-wrapper">
+                    <div class="ele adults">
+                      <label for="adults">Adults</label>
+                      <select name="adults" id="adults">
+                        <option value="hide">Adults</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                    <div class="ele children">
+                      <label for="children">Children</label>
+                      <select name="children" id="children">
+                        <option value="hide">Children</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                    <div class="ele rate-type">
+                      <label for="rateType">Room Info</label>
+                      <select name="rateType" id="rateType">
+                        <option value="hide">Room Number</option>
+                        <option value="">A동&nbsp/&nbsp101호</option>
+                        <option value="">A동&nbsp/&nbsp102호</option>
+                        <option value="">A동&nbsp/&nbsp201호</option>
+                        <option value="">A동&nbsp/&nbsp201호</option>
+                        <option value="">B동&nbsp/&nbsp101호</option>
+                        <option value="">B동&nbsp/&nbsp102호</option>
+                        <option value="">B동&nbsp/&nbsp201호</option>
+                        <option value="">B동&nbsp/&nbsp202호</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row-wrapper">
+                    <div class="ele Check-in">
+                      <label for="Check-in">Check-in</label>
+                      <input type="date" placeholder="Check-in" />
+                    </div>
+                    <div class="ele Check-out">
+                      <label for="Check-out">Check-out</label>
+                      <input type="date" placeholder="Check-out" />
+                    </div>
+                  </div>
+                  <div class="row-wrapper">
+                    <div class="ele first-name">
+                      <label for="firstName">First Name</label>
+                      <input
+                        type="text"
+                        value=""
+                        placeholder="First Name"
+                        id="firstName"
+                      />
+                    </div>
+                    <div class="ele last-name">
+                      <label for="lastName">Last Name</label>
+                      <input
+                        type="text"
+                        value=""
+                        placeholder="Last Name"
+                        id="lastName"
+                      />
+                    </div>
+                  </div>
+                  <div class="row-wrapper">
+                    <div class="ele email-address">
+                      <label for="emailAddress">Email Address</label>
+                      <input
+                        type="email"
+                        value=""
+                        placeholder="Enter Email"
+                        id="emailAddress"
+                      />
+                    </div>
+                    <div class="ele phone-number">
+                      <label for="phoneNumber">Phone Number</label>
+                      <input
+                        type="text"
+                        value=""
+                        placeholder="Enter Phone Number"
+                        id="phoneNumber"
+                      />
+                    </div>
+                  </div>
+                </section>
+              </div>
+
+              <div class="reservation-info">
+                <div class="ele data">
+                  <h4 class="data__head">Room</h4>
+                  <p class="data__description">룸정보 넘어오는 곳</p>
+                </div>
+                <div class="ele data">
+                  <h4 class="data__head">Duration</h4>
+                  <p class="data__description">날짜 넘어오는 곳</p>
+                </div>
+                <div class="ele data">
+                  <h4 class="data__head">Price</h4>
+                  <p class="data__description">
+                    <b>JSON에서 가격불러오기&nbsp</b>&nbsp/&nbsp 1박<br />
+                    <b>합계</b> &nbsp 90,000원
+                  </p>
+                </div>
+              </div>
+
+              <div class="form__footer">
+                <div class="footer-wrapper">
+                  <input type="submit" value="Price Check" class="" />
+
+                  <input type="submit" value="Next" class="" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
